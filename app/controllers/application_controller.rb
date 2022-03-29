@@ -4,12 +4,12 @@ class ApplicationController < Sinatra::Base
   # Add your routes here
   get "/users" do
     users = User.all
-    users.to_json
+    users.to_json(include: { favorites: { include: :activity } })
   end
 
   get "/activities" do
     activities = Activity.all
-    activities.to_json
+    activities.to_json(include: { favorites: { include: :user } })
   end
 
   get "/favorites" do
@@ -30,7 +30,7 @@ class ApplicationController < Sinatra::Base
       activity_id: params[:activity_id],
       user_id: params[:user_id]
     )
-    favorite.to_json
+    favorite.to_json(include: [:user, :activity])
   end
 
   delete "/favorites/:id" do
