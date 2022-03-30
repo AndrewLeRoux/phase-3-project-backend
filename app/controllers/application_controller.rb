@@ -39,4 +39,10 @@ class ApplicationController < Sinatra::Base
     favorite.to_json
   end
 
+  delete "/users/:id" do
+    user = Users.find(params[:id])
+    user.destroy
+    user.to_json
+  end
+
 end
