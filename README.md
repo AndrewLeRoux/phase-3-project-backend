@@ -1,6 +1,6 @@
 # Activity Planner
 
-![image](image/login-page.jpg)
+![images](image/login-page.jpg)
 
 ## About the Application
 
@@ -21,10 +21,13 @@ The backend of this application is a database with a many-to-many relationship b
 
 The activities for this project have been pulled from the Bored API, an API that contains activities along with some information about them. The user and favorite tables are populated from the frontend of the application. When a user profile is created a new user will be added to the database, and anytime a user favorites or unfavorites an activity the favorites table will be updated.
 
-[The Bored API](https://www.boredapi.com/)
+
 
 ## Resources
 
+### Activity Data
+
+The Bored API: [https://www.boredapi.com/](https://www.boredapi.com/)
 
 ### Backend Setup
 
