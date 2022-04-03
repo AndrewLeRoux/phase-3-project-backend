@@ -1,6 +1,6 @@
 # Activity Planner
 
-![images](image/login-page.jpg)
+![images](images/login-page.jpg)
 
 ## About the Application
 
